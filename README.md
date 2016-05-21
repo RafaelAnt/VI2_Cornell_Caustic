@@ -1,19 +1,19 @@
 #Trabalho de VI2
-## Cornell Caustic
+##Cornell Caustic
 
-Grupo:
+###Grupo:
 * Número: 4
-* Carlos Rafael Cruz Antunes    67711
-* Adicionar nomes...
-* Adicionar nomes...
+* Bruno Miguel da Silva Barbosa   67646
+* Carlos Rafael Cruz Antunes      67711
+* Tomás Moreira Ferreira          67701
 
 
-Entrega :
+###Entrega :
 * Data: 17/6/2016
 * Entregar apenas 1 relatório
 
 
-Estrutura do relatório:
+###Estrutura do relatório:
 
 - resumo
 - identificação do problema
