@@ -1,0 +1,19 @@
+#PBS -I lnodes=1:ppn=8:r662,walltime=12:00:0
+
+cd VI/Trabalho/VI2_Cornell_Caustic/PBRT
+
+module load pbrt/v2
+
+rm ../JobScript/Resultados/tempos_photonmap.txt
+
+for P in adaptative bestcandidate halton lowdiscrepancy random stratified
+do
+	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
+	echo "----------------- ${P} -------------------------" >> ../JobScript/Resultados/tempos_photonmap.txt
+	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
+	pbrt photonmap_${P}.pbrt >> ../JobScript/Resultados/tempos_photonmap.txt
+	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
+	echo "----------------- ${P} -------------------------" >> ../JobScript/Resultados/tempos_photonmap.txt
+	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
+	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
+done
