@@ -1,0 +1,12 @@
+#PBS -l nodes=1:ppn=8:r662
+#PBS -l walltime=12:00:0
+
+cd VI/Trabalho/VI2_Cornell_Caustic/PBRT
+
+module load pbrt/v2
+
+mkdir ../JobScript/Testes
+
+pbrt test_metropolis_path.pbrt >> ../JobScript/Testes/metropolis_path.txt
+pbrt test_metropolis_path_adaptative.pbrt >> ../JobScript/Testes/metropolis_path_adaptative.txt
+
