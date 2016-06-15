@@ -2,7 +2,6 @@
 
 use warnings;
 use strict;
-use utf8::all;
 
 my ($dirname, $filename);
 
