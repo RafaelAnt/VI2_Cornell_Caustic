@@ -6,14 +6,10 @@ module load pbrt/v2
 
 rm ../JobScript/Resultados/tempos_photonmap.txt
 
-for P in adaptative bestcandidate halton lowdiscrepancy random stratified
+for S in photonmap
 do
-	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
-	echo "----------------- ${P} -------------------------" >> ../JobScript/Resultados/tempos_photonmap.txt
-	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
-	pbrt photonmap_${P}.pbrt >> ../JobScript/Resultados/tempos_photonmap.txt
-	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
-	echo "----------------- ${P} -------------------------" >> ../JobScript/Resultados/tempos_photonmap.txt
-	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
-	echo "" >> ../JobScript/Resultados/tempos_photonmap.txt
+	for P in adaptative bestcandidate halton lowdiscrepancy random stratified
+	do
+		pbrt ${S}_${P}.pbrt >> ../JobScript/Resultados/tempos_${S}_${P}.txt
+	done
 done
