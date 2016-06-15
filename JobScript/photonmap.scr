@@ -13,3 +13,6 @@ do
 		pbrt ${S}_${P}.pbrt >> ../JobScript/Resultados/tempos_${S}_${P}.txt
 	done
 done
+
+cd ../JobScript
+perl getTempos.pl Resultados
