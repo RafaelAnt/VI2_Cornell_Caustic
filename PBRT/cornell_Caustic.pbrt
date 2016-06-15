@@ -10,14 +10,14 @@ Sampler "random" "integer pixelsamples" [256]
 #Sampler "stratified" "integer xsamples" [16] "integer ysamples" [16] "bool jitter" ["true"]
 
 # Nome do ficheiro fica: SAMPLER_PIXELSAMPLES_SURFACEINTEGRATOR_OUTROS(se existirem).exr
-Film "image" "string filename" ["random 256 photonmap 10000 20000.exr"] "integer xresolution" [800] "integer yresolution" [800]
+Film "image" "string filename" ["random 256 photonmap 0 20000.exr"] "integer xresolution" [800] "integer yresolution" [800]
 
 #SurfaceIntegrator "ambientocclusion" "integer nsamples" [256]
 #SurfaceIntegrator "whitted" "integer maxdepth" [5]
 #SurfaceIntegrator "directlighting" "string strategy" ["one"]
 #SurfaceIntegrator "path"
 #SurfaceIntegrator "dipolesubsurface" "float minsampledistance" [.1] "float maxerror" [.05]
-SurfaceIntegrator "photonmap" "integer causticphotons" [10000] "integer indirectphotons" [20000] "bool finalgather" ["true"]
+SurfaceIntegrator "photonmap" "integer causticphotons" [0] "integer indirectphotons" [20000] "bool finalgather" ["true"]
 
 
 #Início do Mundo
