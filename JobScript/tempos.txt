@@ -1,0 +1,12 @@
+tempos_photonmap_halton.txt: 3031.0s
+tempos_path_bestcandidate.txt: 53.9s
+tempos_path_random.txt: 46.6s
+tempos_photonmap_bestcandidate.txt: 3197.3s
+tempos_photonmap_random.txt: 2996.2s
+tempos_photonmap_lowdiscrepancy.txt: 3004.4s
+tempos_photonmap_stratified.txt: 3000.9s
+tempos_path_halton.txt: 53.8s
+tempos_path_lowdiscrepancy.txt: 53.2s
+tempos_path_stratified.txt: 51.8s
+tempos_photonmap_adaptative.txt: 5224.8s
+tempos_path_adaptative.txt: 78.4s

@@ -1,0 +1,10 @@
+#PBS -l nodes=1:ppn=8:r662
+#PBS -l walltime=12:00:0
+
+cd VI/Trabalho/VI2_Cornell_Caustic/PBRT
+
+module load pbrt/v2
+
+
+pbrt cornell_Caustic.pbrt >> ../JobScript/MILHOES.txt
+

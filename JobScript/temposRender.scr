@@ -7,7 +7,7 @@ module load pbrt/v2
 
 rm ../JobScript/Resultados/tempos_photonmap.txt
 
-for S in path photonmap
+for S in photonmap
 do
 	for P in adaptative bestcandidate halton lowdiscrepancy random stratified
 	do
